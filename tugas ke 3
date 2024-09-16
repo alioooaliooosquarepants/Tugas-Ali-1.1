@@ -1,0 +1,35 @@
+#include <stdio.h>
+int nala;
+int nala1;
+int nala2;
+void fahrenheit(){
+    nala = (nala*9/5)+32;
+    printf("result=%d fahrenheit\n",nala);
+}
+void reamur(){ 
+    nala =(nala-32)*4/9;
+    printf("result=%d reamur\n",nala1);
+}
+void kelvin(){
+    nala=nala*5/4+273;
+    printf("result=%d kelvin\n",nala2);
+}
+
+int main() {
+printf("input number celcius");    
+scanf("%d",&nala,&nala1,&nala2);
+for (int i=0;i<10;i++){
+printf("%d celcius=",i);
+int ali=i%3;
+if(ali==1){
+    fahrenheit();
+}
+        else if (ali==2){
+            reamur();
+            
+        }
+else if (ali==0){
+    kelvin();
+}
+}
+}
